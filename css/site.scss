@@ -3,9 +3,154 @@
 
 // ^ dont remove these, otherwise jekyll wont convert this .scss -> .css
 
+@import "normalize";
+
+@font-face {
+  font-family: 'seanslabnormalsemibold';
+  src: url('./fonts/seanslab-normalsemibold-webfont.woff2') format('woff2'),
+       url('./fonts/seanslab-normalsemibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  margin: 0
+  background-color: #1c1b20;
+  color: #fff;
+  margin: 0;
+  font-family: 'seanslabnormalsemibold';
 }
 h1 {
-  color: red;
+  font-family: 'Clicker Script', cursive;
+}
+.ucase {
+  text-transform: uppercase;
+}
+.social-icon {
+  width: 20px;
+  vertical-align: middle;
+}
+.text-center {
+  text-align: center;
+}
+.main {
+  font-size: 1rem;
+  padding-bottom: 4rem;
+}
+@media (min-width:768px) {
+  .main {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width:992px) {
+  .main {
+    font-size: 1.2rem;
+  }
+}
+.main a {
+  color: #fff;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// poor mans bootstrap
+*, :after, :before {
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto
+}
+@media (min-width:576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width:768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width:992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+// @media (min-width:1200px) {
+//   .container {
+//     max-width: 1140px;
+//   }
+// }
+
+.wrap {
+  position: relative;
+  width: 100%;
+  padding-bottom: 58.77192982%;
+}
+
+.griddy {
+  display: grid;
+  grid-template-columns: 18.5% 18.5% 26% 18.5% 18.5%;
+  grid-template-rows: 36.5% 26.5% 37%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "A A B C C"
+    "D E B F G"
+    "H H I J J";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.A { grid-area: A; }
+.B { grid-area: B; }
+.C { grid-area: C; }
+.D { grid-area: D; }
+.E { grid-area: E; }
+.F { grid-area: F; }
+.G { grid-area: G; }
+.H { grid-area: H; }
+.I { grid-area: I; }
+.J { grid-area: J; }
+
+.griddy > div {
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.A {
+  background-image: url('/img/a.jpg');
+}
+.B {
+  background-image: url('/img/b.jpg');
+}
+.C {
+  background-image: url('/img/c.jpg');
+}
+.D {
+  background-image: url('/img/d.jpg');
+}
+.E {
+  background-image: url('/img/e.jpg');
+}
+.F {
+  background-image: url('/img/f.jpg');
+}
+.G {
+  background-image: url('/img/g.jpg');
+}
+.H {
+  background-image: url('/img/h.jpg');
+}
+.I {
+  background-image: url('/img/logo.svg');
+  background-color: #fff;
+  background-size: contain !important;
+  background-repeat: no-repeat;
+}
+.J {
+  background-image: url('/img/j.jpg');
 }

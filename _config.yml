@@ -12,5 +12,6 @@ exclude: [".ruby-version", "Gemfile", "Gemfile.lock", "README.md"]
 
 sass:
   style: compressed
+  sass_dir: css/_scss
 
 encoding: utf-8

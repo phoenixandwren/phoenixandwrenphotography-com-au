@@ -7,13 +7,12 @@
   <title>{{ page.title }}</title>
   <meta name="keywords" content="{{ page.keywords }}">
   <meta name="description" content="{{ page.description }}">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
   {{ content }}
-  <footer>
-    <p>&copy; {{ site.time | date: '%Y' }} Site Name.</p>
-  </footer>
 </body>
 </html>
