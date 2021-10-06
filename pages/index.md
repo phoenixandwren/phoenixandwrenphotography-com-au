@@ -7,16 +7,16 @@ permalink: /
 <div class="container">
   <div class="wrap">
     <div class="griddy">
-      <div class="A"></div>
-      <div class="B"></div>
-      <div class="C"></div>
-      <div class="D"></div>
-      <div class="E"></div>
-      <div class="F"></div>
-      <div class="G"></div>
-      <div class="H"></div>
-      <div class="I"></div>
-      <div class="J"></div>
+      <div class="a"></div>
+      <div class="b"></div>
+      <div class="c"></div>
+      <div class="d"></div>
+      <div class="e"></div>
+      <div class="f"></div>
+      <div class="g"></div>
+      <div class="h"></div>
+      <div class="i"></div>
+      <div class="j"></div>
     </div>
   </div>
 </div>

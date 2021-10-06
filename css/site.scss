@@ -90,6 +90,7 @@ h1 {
   padding-bottom: 58.77192982%;
 }
 
+/*
 .griddy {
   display: grid;
   grid-template-columns: 18.5% 18.5% 26% 18.5% 18.5%;
@@ -106,51 +107,49 @@ h1 {
   right: 0;
   bottom: 0;
 }
-.A { grid-area: A; }
-.B { grid-area: B; }
-.C { grid-area: C; }
-.D { grid-area: D; }
-.E { grid-area: E; }
-.F { grid-area: F; }
-.G { grid-area: G; }
-.H { grid-area: H; }
-.I { grid-area: I; }
-.J { grid-area: J; }
+.a { grid-area: A; }
+.b { grid-area: B; }
+.c { grid-area: C; }
+.d { grid-area: D; }
+.e { grid-area: E; }
+.f { grid-area: F; }
+.g { grid-area: G; }
+.h { grid-area: H; }
+.i { grid-area: I; }
+.j { grid-area: J; }
+*/
+
+.griddy .a { top: 0;     left: 0;     width: 37%;   height: 36.5%; }
+.griddy .b { top: 0;     left: 37%;   width: 26%;   height: 63%; }
+.griddy .c { top: 0;     left: 63%;   width: 37%;   height: 36.5%; }
+
+.griddy .d { top: 36.5%; left: 0;     width: 18.5%; height: 26.5%; }
+.griddy .e { top: 36.5%; left: 18.5%; width: 18.5%; height: 26.5%; }
+.griddy .f { top: 36.5%; left: 63%;   width: 18.5%; height: 26.5%; }
+.griddy .g { top: 36.5%; left: 81.5%; width: 18.5%; height: 26.5%; }
+
+.griddy .h { top: 63%;   left: 0;     width: 37%;   height: 37%; }
+.griddy .i { top: 63%;   left: 37%;   width: 26%;   height: 37%; }
+.griddy .j { top: 63%;   left: 63%;   width: 37%;   height: 37%; }
 
 .griddy > div {
+  position: absolute;
   background-size: cover;
   background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
-.A {
-  background-image: url('../img/a.jpg');
-}
-.B {
-  background-image: url('../img/b.jpg');
-}
-.C {
-  background-image: url('../img/c.jpg');
-}
-.D {
-  background-image: url('../img/d.jpg');
-}
-.E {
-  background-image: url('../img/e.jpg');
-}
-.F {
-  background-image: url('../img/f.jpg');
-}
-.G {
-  background-image: url('../img/g.jpg');
-}
-.H {
-  background-image: url('../img/h.jpg');
-}
-.I {
+
+.a { background-image: url('../img/a.jpg'); }
+.b { background-image: url('../img/b.jpg'); }
+.c { background-image: url('../img/c.jpg'); }
+.d { background-image: url('../img/d.jpg'); }
+.e { background-image: url('../img/e.jpg'); }
+.f { background-image: url('../img/f.jpg'); }
+.g { background-image: url('../img/g.jpg'); }
+.h { background-image: url('../img/h.jpg'); }
+.i {
   background-image: url('../img/logo.svg');
   background-color: #fff;
   background-size: contain !important;
-  background-repeat: no-repeat;
 }
-.J {
-  background-image: url('../img/j.jpg');
-}
+.j { background-image: url('../img/j.jpg'); }
