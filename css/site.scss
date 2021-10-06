@@ -137,19 +137,35 @@ h1 {
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  overflow: hidden;
+  &:hover {
+    &:before {
+      transform: scale(1.05);
+      transform-origin: 50% 50%;
+    }
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: transform .2s;
+  }
 }
 
-.a { background-image: url('../img/a.jpg'); }
-.b { background-image: url('../img/b.jpg'); }
-.c { background-image: url('../img/c.jpg'); }
-.d { background-image: url('../img/d.jpg'); }
-.e { background-image: url('../img/e.jpg'); }
-.f { background-image: url('../img/f.jpg'); }
-.g { background-image: url('../img/g.jpg'); }
-.h { background-image: url('../img/h.jpg'); }
-.i {
+.a:before { background-image: url('../img/a.jpg'); }
+.b:before { background-image: url('../img/b.jpg'); }
+.c:before { background-image: url('../img/c.jpg'); }
+.d:before { background-image: url('../img/d.jpg'); }
+.e:before { background-image: url('../img/e.jpg'); }
+.f:before { background-image: url('../img/f.jpg'); }
+.g:before { background-image: url('../img/g.jpg'); }
+.h:before { background-image: url('../img/h.jpg'); }
+.i:before {
   background-image: url('../img/logo.svg');
   background-color: #fff;
   background-size: contain !important;
 }
-.j { background-image: url('../img/j.jpg'); }
+.j:before { background-image: url('../img/j.jpg'); }
