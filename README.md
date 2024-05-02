@@ -17,7 +17,7 @@ https://phoenixandwren.github.io/phoenixandwrenphotography-com-au
 
 # Initial Setup
 
-* `rbenv install 2.7.3`
-* `gem install bundler -v '2.1.4'`
+* `rbenv install 3.3.1`
+* `gem install bundler -v '2.5.9'`
 * `bundle install`
 * `bundle exec jekyll serve`
